@@ -26,10 +26,17 @@ Task: Remotely use a WebSDR-radio that is in another country and listen to the t
 
 For this task I used the web service http://websdr.org/ to find a suitable receiver to listen with. 
 
-I found a receiver based in Milford, Pennsylvania http://websdr.k3fef.com:8901/ and found a radio on frequency 770 kHz on AM modulation, which I googled to be WABC New York City radio broadcast. At the time I was listening there was a host talking about the beautiful weather on the East Coast, then moving onto discussions about the gas prices. Around 7 pm CEST. 
+I found a receiver based in Milford, Pennsylvania http://websdr.k3fef.com:8901/ and found a radio on **frequency 770 kHz** and **AM modulation**, which I googled to be WABC New York City radio broadcast. At the time I was listening there was a host talking about the beautiful weather on the East Coast, then moving onto discussion about the gas prices and American economy. Around 7 pm CEST. 
 
 <img width="1193" height="441" alt="kuva" src="https://github.com/user-attachments/assets/f73c1a04-a069-4fca-9e30-3ea047637bbe" />
 
+The wavelength of radio wave is calculated by dividing the velocity (c) of the radio wave by frequency (f). Velocity is the speed of light 299 792 458 m/s. (Ghayas 2021)
+
+I used the [Wavelength calculator](https://commsbrief.com/wavelength-calculator-calculating-wavelength-of-radio-waves/) on commsbrief.com to do this calculation for the wavelength for the example I frequency I used here, 770 kHz (0.77 MHz):
+
+<img width="424" height="421" alt="kuva" src="https://github.com/user-attachments/assets/4677f661-04d8-4102-9c0a-65f6455064c5" />
+
+As a result, the wavelength of the frequency 770 kHz is **389 meters** (rounded down from 389.34085454545453).
 
 <br>
 
@@ -57,5 +64,7 @@ I found a receiver based in Milford, Pennsylvania http://websdr.k3fef.com:8901/ 
 List of references:
 
 Government of Canada 2026. Radiofrequency Energy and Safety. Readable: https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/safety-and-compliance/facts-about-towers/radiofrequency-energy-and-safety. Read: 24.10.2026.
+
+Ghayas, A. 6.6.2021. Wavelength Calculator: Calculating wavelength of radio waves. Readable: https://commsbrief.com/wavelength-calculator-calculating-wavelength-of-radio-waves/. Read: 24.10.2026.
 
 Karvinen, T. & Iso-Anttila, L. 2026. Verkkoon tunkeutuminen ja tiedustelu - Network Attacks and Reconnaissance. Readable: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/. Read: 24.10.2026.
