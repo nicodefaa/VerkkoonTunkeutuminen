@@ -66,11 +66,9 @@ I navigated to the address https://www.adsbexchange.com/ and clicked *View the m
 
 I clicked one one of the planes on the map which was a UAL3865 United Airlines type B789 commercial plane. Having it selected it showed the flown path on the map.
 
-
+It had left from the Detroit International Airport at 19:25 UTC and was currently flying over Baca County at 37100 ft altitude.
 
 <img width="376" height="444" alt="kuva" src="https://github.com/user-attachments/assets/bea81144-63ce-497a-93e7-307e3fa8fbef" />
-
-It had left from the Detroit International Airport at 19:25 UTC.
 
 <img width="185" height="136" alt="kuva" src="https://github.com/user-attachments/assets/140bb2b7-6d83-4a06-bdf0-cd5856006d5f" />
 
