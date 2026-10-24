@@ -47,7 +47,7 @@ As a result, the wavelength of the frequency 770 kHz is **389 meters** (rounded 
 
 Task: Listen to a channel that is using a different modulation from the one used previously (Reference: Karvinen & Iso-Anttila 2026). Translated from Finnish by me.
 
-My previous channel was using the AM modulation. First I tried to look through receivers for a FM channel, but it was hard to find one with good audio quality.
+My previous channel was using the AM modulation. First I tried to look through receivers for a FM channel, but it was hard to find one with good signal / audio quality.
 
 Searching through a little more I found on the receiver http://sdrgeorgia.sytes.net:8902/ a LSB modulation channel on frequency 3679.00 kHz.
 
