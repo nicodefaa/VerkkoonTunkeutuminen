@@ -64,7 +64,7 @@ Task: Find a plane that interests you from the ADS-B Exchange -service. Describe
 
 I navigated to the address https://www.adsbexchange.com/ and clicked *View the map* on the top right. 
 
-I clicked one one of the planes on the map which was a UAL3865 United Airlines type B789 commercial plane. Having it selected it showed the flown path on the map.
+I clicked one one of the planes on the map which was a UAL3865 United Airlines type B789 commercial plane. Having it selected it showed the flown path on the map and a side panel with other information like speed, altitude, position coordinates.
 
 It had left from the Detroit International Airport at 19:25 UTC and was currently flying over Baca County at 37100 ft altitude.
 
