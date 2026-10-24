@@ -38,9 +38,23 @@ I used the [Wavelength calculator](https://commsbrief.com/wavelength-calculator-
 
 As a result, the wavelength of the frequency 770 kHz is **389 meters** (rounded down from 389.34085454545453).
 
+<img width="1057" height="511" alt="kuva" src="https://github.com/user-attachments/assets/4b8316d1-96ff-40d0-990b-0475af1066f5" />
+
+
 <br>
 
 ## b) Moduwhat?
+
+Task: Listen to a channel that is using a different modulation from the one used previously (Reference: Karvinen & Iso-Anttila 2026). Translated from Finnish by me.
+
+My previous channel was using the AM modulation. First I tried to look through receivers for a FM channel, but it was hard to find one with good audio quality.
+
+Searching through a little more I found on the receiver http://sdrgeorgia.sytes.net:8902/ a LSB modulation channel on frequency 3679.00 kHz.
+
+I heard some people talking with each other in a foreign language (possibly russian?).
+
+<img width="1057" height="511" alt="kuva" src="https://github.com/user-attachments/assets/623d0001-007d-4a44-9505-ae52e26c3b8a" />
+
 
 <br>
 
