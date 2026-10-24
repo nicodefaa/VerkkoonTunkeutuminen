@@ -60,6 +60,23 @@ I heard some people talking with each other in a foreign language (possibly russ
 
 ## c) ADS-B
 
+Task: Find a plane that interests you from the ADS-B Exchange -service. Describe the plane and its flight and how you found the information (Reference: Karvinen & Iso-Anttila 2026). Translated from Finnish by me.
+
+I navigated to the address https://www.adsbexchange.com/ and clicked *View the map* on the top right. 
+
+I clicked one one of the planes on the map which was a UAL3865 United Airlines type B789 commercial plane. Having it selected it showed the flown path on the map.
+
+
+
+<img width="376" height="444" alt="kuva" src="https://github.com/user-attachments/assets/bea81144-63ce-497a-93e7-307e3fa8fbef" />
+
+It had left from the Detroit International Airport at 19:25 UTC.
+
+<img width="185" height="136" alt="kuva" src="https://github.com/user-attachments/assets/140bb2b7-6d83-4a06-bdf0-cd5856006d5f" />
+
+<img width="341" height="354" alt="kuva" src="https://github.com/user-attachments/assets/b903261f-fc72-4382-9839-3c6c07273673" />
+
+
 <br>
 
 ## d) Atalaya (voluntary)
