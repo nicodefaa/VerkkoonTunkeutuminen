@@ -18,11 +18,18 @@ Application frequencies based on graph from (Government of Canada 2026).
 
 Wavelength and antenna size decrease as frequency and speed (ability to move information) increase. Permeability depends more on other factors such as environment.
 
-
 <br>
 
-
 ## a) WebSDR.
+
+Task: Remotely use a WebSDR-radio that is in another country and listen to the transmission. Use a public radio broadcast as the example and tell the frequency, wavelength and modulation used. (Reference: Karvinen & Iso-Anttila 2026). Translated from Finnish by me.
+
+For this task I used the web service http://websdr.org/ to find a suitable receiver to listen with. 
+
+I found a receiver based in Milford, Pennsylvania http://websdr.k3fef.com:8901/ and found a radio on frequency 770 kHz on AM modulation, which I googled to be WABC New York City radio broadcast. At the time I was listening there was a host talking about the beautiful weather on the East Coast, then moving onto discussions about the gas prices. Around 7 pm CEST. 
+
+<img width="1193" height="441" alt="kuva" src="https://github.com/user-attachments/assets/f73c1a04-a069-4fca-9e30-3ea047637bbe" />
+
 
 <br>
 
