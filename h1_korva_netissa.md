@@ -79,13 +79,23 @@ It had left from the Detroit International Airport at 19:25 UTC and was currentl
 
 ## d) Atalaya (voluntary)
 
+Task: Install F-Droid, and Atalaya with it. Use the app and explain results (Reference: Karvinen & Iso-Anttila 2026). Translated from Finnish by me.
+
+On my Android phone (Honor x6a), I navigated to the site https://f-droid.org/ using a web browser (I used Brave), and downloaded the F-Droid.apk installation file. From the downloads directly I ran the file with my phone's built-in packet installer.
+
+After installing I opened the F-Droid app and searched for *Atalaya*. By default untrusted app downloading was disabled in the settings, so I enabled it.
+
 <br>
 
 ## e) WifiAnalyzer (voluntary)
 
+Task: Install WifiAnalyzer with F-Droid, use the app and explain results (Reference: Karvinen & Iso-Anttila 2026). Translated from Finnish by me. 
+
 <br>
 
 ## f) GPSTest (voluntary)
+
+Task: Install GPSTest with F-Droid, use the app and explain results (Reference: Karvinen & Iso-Anttila 2026). Translated from Finnish by me. 
 
 
 <br>
