@@ -124,8 +124,6 @@ RSRQ: -3 dB to - 8 dB = excellent, -11 to 15 dB = poor (-9 dB = good)
 
 SNR: 20 dB = excellent, <10 dB = poor (25 dB = excellent)
 
-
-
 Reference: M365 Copilot.
 
 <br>
@@ -134,12 +132,52 @@ Reference: M365 Copilot.
 
 Task: Install WifiAnalyzer with F-Droid, use the app and explain results (Reference: Karvinen & Iso-Anttila 2026). Translated from Finnish by me. 
 
+Similarly as with the previous task, I installed WifiAnalyzer using F-Droid and did a scan in a public place.
+
+I could find multiple networks that likely belonged to an enterprise, and some that looked like people's personal devices.
+
+<img width="720" height="1612" alt="wifianalyzer1" src="https://github.com/user-attachments/assets/de08a61c-654d-480e-a946-ce708d924f3b" />
+
+As before, I used Copilot to explain the results to me. The results displayed:
+
+SSID (Service Set Indentifier) = The network name that devices see when scanning for networks.
+
+BSSID (Basic Service Set Identifier) = MAC address of the specific access point
+
+RSSI (Received Signal Strength) = How strong the signal is at my phone, lower value is better (eg. -37 dBm on the top result in the image)
+
+Wi-Fi Channel = (CH 11 on the top result in the image)
+
+Center Frequency = Frequency used by the channel (2462 MHz on the top result in the image)
+
+Estimated Distance = Estimated distance calculated from signal strength (~0.7m on the top result in the image)
+
+Frequency Range occupied = Approximate spectrum used by the channel (2452 - 2472 on the top result in the image)
+
+Channel Width = How much radio spectrum the access point is using (20 MHz on the top result in the image)
+
+Vendor/OUI Lookup = Manufacturer looked up by the app based on the mac address (HUAWEI TECHNOLOGIES on the top result in the image)
+
+Security Type (WPA2 on the top result in the image)
+
+Reference: M365 Copilot.
+
+
 <br>
 
 ## f) GPSTest (voluntary)
 
 Task: Install GPSTest with F-Droid, use the app and explain results (Reference: Karvinen & Iso-Anttila 2026). Translated from Finnish by me. 
 
+I downloaded GPSTest app from F-Droid and opened the app in a public location. I used Copilot again to help me get a quick read on the information displayed.
+
+<img width="720" height="1612" alt="GPSTest1" src="https://github.com/user-attachments/assets/9df9f44b-526c-41f3-b0dc-b8c72e8947a3" />
+
+It showed my coordinated latitude and longitude, moving speed, direction etc. On the bottom there was a list of satellites with their IDs, satellite systems and other information.
+
+There was also a map tab that showed my exact location on the map, very similar to apps like Google Maps.
+
+Reference: M365 Copilot.
 
 <br>
 
@@ -151,4 +189,4 @@ Ghayas, A. 6.6.2021. Wavelength Calculator: Calculating wavelength of radio wave
 
 Karvinen, T. & Iso-Anttila, L. 2026. Verkkoon tunkeutuminen ja tiedustelu - Network Attacks and Reconnaissance. Readable: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/. Read: 24.10.2026.
 
-M365 Copilot GPT-5 chat model was used to explain and assist using the apps on tasks d, e and f.
+M365 Copilot GPT-5 chat model was used to interpret information on the apps on tasks d, e and f.
