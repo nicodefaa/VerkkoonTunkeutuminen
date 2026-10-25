@@ -1,4 +1,4 @@
-# h1 "Korva netissä"
+# h1 "Korva netissä"  -- Nico Defaa
 
 With this being the first exercise of this particular course, I started by downloading a new Kali linux virtual machine (version 2026.2) from [Kali's homepage](https://www.kali.org/get-kali/#kali-installer-images). I used mostly default settings and options for the installation (apart from language settings). After installation I updated and downloaded newest packages with `sudo apt-get install && sudo apt upgrade` and downloaded *micro* and *tree* with `sudo apt install micro tree`.
 
@@ -83,7 +83,50 @@ Task: Install F-Droid, and Atalaya with it. Use the app and explain results (Ref
 
 On my Android phone (Honor x6a), I navigated to the site https://f-droid.org/ using a web browser (I used Brave), and downloaded the F-Droid.apk installation file. From the downloads directly I ran the file with my phone's built-in packet installer.
 
-After installing I opened the F-Droid app and searched for *Atalaya*. By default untrusted app downloading was disabled in the settings, so I enabled it.
+After installing I opened the F-Droid app and searched for *Atalaya*. After installation opening the app provided the following view on the Monitor-tab:
+
+<img width="720" height="1612" alt="atalaya_1" src="https://github.com/user-attachments/assets/62e58061-687e-4b41-b107-2967b91bbbc4" />
+
+*Some information censored by me for privacy reasons.*
+
+I asked Copilot to explain the information seen on the screen. Here are the explanations it told me, starting from top, left to right:
+
+Telia = operator
+
+4G LTE = connection technology
+
+2600 = LTE frequency in MHz
+
+CI = Complete LTE cell identity (number sequence)
+
+TAC = Tracking area code (number sequence)
+
+eNB = base station / tower identifier (number sequence)
+
+PCI = Physical cell ID used by radio network (number sequence)
+
+CID = sector/ cell on the tower (number)
+
+Signals:
+
+RSRP -89.0 dBm = signal strength
+
+RSRQ -9 dB = signal quality
+
+SNR 25 dB = signal-to-noise ratio
+
+
+Copilot also provided me with the following reference values:
+
+RSRP: -80 dBm = excellent, -110 dBM = weak (-89 dBm = good)
+
+RSRQ: -3 dB to - 8 dB = excellent, -11 to 15 dB = poor (-9 dB = good)
+
+SNR: 20 dB = excellent, <10 dB = poor (25 dB = excellent)
+
+
+
+Reference: M365 Copilot.
 
 <br>
 
@@ -107,3 +150,5 @@ Government of Canada 2026. Radiofrequency Energy and Safety. Readable: https://i
 Ghayas, A. 6.6.2021. Wavelength Calculator: Calculating wavelength of radio waves. Readable: https://commsbrief.com/wavelength-calculator-calculating-wavelength-of-radio-waves/. Read: 24.10.2026.
 
 Karvinen, T. & Iso-Anttila, L. 2026. Verkkoon tunkeutuminen ja tiedustelu - Network Attacks and Reconnaissance. Readable: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/. Read: 24.10.2026.
+
+M365 Copilot GPT-5 chat model was used to explain and assist using the apps on tasks d, e and f.
