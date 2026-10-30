@@ -8,7 +8,7 @@ As with all other weekly exercises, I started by running `sudo apt-get update &&
 
 ## x) Read and summarize
 
-Task: Read and summarize the two articles: [Wireshark - Getting Started](https://terokarvinen.com/wireshark-getting-started/) and [Network Interface Names on Linux](https://terokarvinen.com/network-interface-linux/) (Reference: Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
+Task: Read and summarize the two articles: [Wireshark - Getting Started](https://terokarvinen.com/wireshark-getting-started/) and [Network Interface Names on Linux](https://terokarvinen.com/network-interface-linux/) (Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
 
 **Wireshark - Getting Started**
 
@@ -20,7 +20,7 @@ Task: Read and summarize the two articles: [Wireshark - Getting Started](https:/
 - Captured traffic viewing can be filtered in many ways like by protocol, port, IP address or strings. For example *tcp.port == 443*.
 - Captures can be saved into **.pcap**-files.
 
-(Reference: Karvinen, T. 2025a)
+Reference: Karvinen, T. 2025a
 
 <br>
 
@@ -31,7 +31,7 @@ Task: Read and summarize the two articles: [Wireshark - Getting Started](https:/
 - IPv4 local addresses are 127.0.0.1/8 and IPv6 local addresses are ::1/128.
 - You can check your interfaces with *ip a* (ip address) and *ip route*.
 
-(Reference: Karvinen, T. 2025b)
+Reference: Karvinen, T. 2025b
 
 <br>
 
@@ -61,18 +61,17 @@ Re-connected, ping works again:
 
 <img width="680" height="245" alt="kuva" src="https://github.com/user-attachments/assets/c125671f-96f7-4fe7-87bb-21cde3e84ccd" />
 
-With a Virtual Machine it can also be done by going into the Virtual Machine's settings in VirtualBox *Right click -> Settings -> Network*, and disabling the Network Adapter (make sure there aren't any enabled adapters in the other tabs either). This can be useful as a more permanent solution if needed.
+With a Virtual Machine it can also be done by going into the Virtual Machine's settings in VirtualBox *Right click -> Settings -> Network*, and disabling the Network Adapter. Make sure there aren't any enabled adapters in the other tabs either. This can be useful as a more permanent solution if needed.
 
 <img width="504" height="286" alt="kuva" src="https://github.com/user-attachments/assets/73755d25-636f-4821-be20-b582ea1a4a55" />
-
 
 <br>
 
 ## c) Wireshark
 
-Task: Install Wireshark and use it to capture activity. Only your own activity. Using Virtual Machine is allowed. (Reference: Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
+Task: Install Wireshark and use it to capture activity. Only your own activity. Using Virtual Machine is allowed. (Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
 
-Wireshark can be installed with `sudo apt-get update` and `sudo apt-get install wireshark` (Reference: Karvinen, T. 2025a).
+Wireshark can be installed with `sudo apt-get update` and `sudo apt-get install wireshark` (Karvinen, T. 2025a).
 
 My Kali Linux came with Wireshark already installed:
 
@@ -82,37 +81,37 @@ My Kali Linux came with Wireshark already installed:
 
 ## d) Oikeesti TCP/IP
 
-Task: Point out TCP/IP-model's 4 layers from one captured package. In addition to explanation, hightlight them in a screenshot. (Reference: Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
+Task: Point out TCP/IP-model's 4 layers from one captured package. In addition to explanation, hightlight them in a screenshot. (Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
 
 <br>
 
 ## e) Mitäs tuli surffattua?
 
-Task: Open the file **surfing-secure.pcap**. Inspect it and explain what kind of capture it is, in short and in general. (Reference: Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
+Task: Open the file **surfing-secure.pcap**. Inspect it and explain what kind of capture it is, in short and in general. (Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
 
 <br>
 
 ## f) Volutary, difficult
 
-Task: From **surfing-secure.pap**, try to solve which browser the user is using. (Reference: Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
+Task: From **surfing-secure.pap**, try to solve which browser the user is using. (Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
 
 <br>
 
 ## g) 
 
-Task: From **surfing-secure.pap**, try to solve what model NIC (Network Interface Card) the user has. (Reference: Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
+Task: From **surfing-secure.pap**, try to solve what model NIC (Network Interface Card) the user has. (Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
 
 <br>
 
 ## h) 
 
-Task: From **surfing-secure.pap**, try to solve what web server the user has visited. Bad news: Connection is secured with TLS-encryption. (Reference: Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
+Task: From **surfing-secure.pap**, try to solve what web server the user has visited. Bad news: Connection is secured with TLS-encryption. (Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
 
 <br>
 
 ## i) Analyysi
 
-Task: Capture a small amount of your own network traffic. Analyze it and explain what happens, in as much detail as possible. (Reference: Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
+Task: Capture a small amount of your own network traffic. Analyze it and explain what happens, in as much detail as possible. (Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
 
 <br>
 
