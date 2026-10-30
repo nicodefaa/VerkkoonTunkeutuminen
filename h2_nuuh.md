@@ -39,11 +39,32 @@ Task: Read and summarize the two articles: [Wireshark - Getting Started](https:/
 
 Task: Install Debian or Kali Linux Virtual Machine. (Reference: Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
 
+Already done and documented at the beginning of the [previous week's exercise](https://github.com/nicodefaa/VerkkoonTunkeutuminen/blob/main/h1_korva_netissa.md).
+
 <br>
 
 ## b) Ei voi kalastaa
 
 Task: Show that you can disconnect and reconnect internet connection on your Virtual Machine (Reference: Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
+
+On Kali, disconnecting and re-connecting the network is really easy. On the taskbar in the top right there is a Network button where you can select which network the machine is connected to, including a *Disconnect*-option.
+
+I tested the connection by pinging `ping 8.8.8.8`.
+
+<img width="786" height="291" alt="kuva" src="https://github.com/user-attachments/assets/278ad65a-766d-42f4-a822-19013b186692" />
+
+While the network is disconnected, the ping doesn't work:
+
+<img width="787" height="209" alt="kuva" src="https://github.com/user-attachments/assets/902e267e-b819-4f78-9122-2d3289bb769a" />
+
+Re-connected, ping works again:
+
+<img width="680" height="245" alt="kuva" src="https://github.com/user-attachments/assets/c125671f-96f7-4fe7-87bb-21cde3e84ccd" />
+
+With a Virtual Machine it can also be done by going into the Virtual Machine's settings in VirtualBox *Right click -> Settings -> Network*, and disabling the Network Adapter (make sure there aren't any enabled adapters in the other tabs either). This can be useful as a more permanent solution if needed.
+
+<img width="504" height="286" alt="kuva" src="https://github.com/user-attachments/assets/73755d25-636f-4821-be20-b582ea1a4a55" />
+
 
 <br>
 
