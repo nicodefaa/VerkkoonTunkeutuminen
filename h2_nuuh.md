@@ -1,4 +1,3 @@
-<img width="350" height="740" alt="TCPIP_model" src="https://github.com/user-attachments/assets/4e57cda9-bc98-416d-b4b7-1c76e66172b1" />
 # h2 "Nuuh" - Nico Defaa
 
 Work environment: Kali Linux 2026.2 Virtual Machine
