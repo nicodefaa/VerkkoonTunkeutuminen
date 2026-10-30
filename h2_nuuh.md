@@ -72,6 +72,12 @@ With a Virtual Machine it can also be done by going into the Virtual Machine's s
 
 Task: Install Wireshark and use it to capture activity. Only your own activity. Using Virtual Machine is allowed. (Reference: Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
 
+Wireshark can be installed with `sudo apt-get update` and `sudo apt-get install wireshark` (Reference: Karvinen, T. 2025a).
+
+My Kali Linux came with Wireshark already installed:
+
+<img width="326" height="125" alt="kuva" src="https://github.com/user-attachments/assets/d24a7ab4-9e0b-49a6-951d-e3effc903269" />
+
 <br>
 
 ## d) Oikeesti TCP/IP
