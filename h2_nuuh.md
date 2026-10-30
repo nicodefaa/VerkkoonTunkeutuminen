@@ -1,3 +1,4 @@
+<img width="350" height="740" alt="TCPIP_model" src="https://github.com/user-attachments/assets/4e57cda9-bc98-416d-b4b7-1c76e66172b1" />
 # h2 "Nuuh" - Nico Defaa
 
 Work environment: Kali Linux 2026.2 Virtual Machine
@@ -83,6 +84,12 @@ My Kali Linux came with Wireshark already installed:
 
 Task: Point out TCP/IP-model's 4 layers from one captured package. In addition to explanation, hightlight them in a screenshot. (Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
 
+
+
+<img width="350" height="740" alt="TCPIP_model" src="https://github.com/user-attachments/assets/374b19cb-7b6c-4a83-9121-be54f39eb906" />
+
+TCP/IP Model drawn by me based on (Geeksforgeeks 2026).
+
 <br>
 
 ## e) Mitäs tuli surffattua?
@@ -118,6 +125,8 @@ Task: Capture a small amount of your own network traffic. Analyze it and explain
 
 
 List of references:
+
+Geeksforgeeks 2026. TCP/IP Model. Readable: https://www.geeksforgeeks.org/computer-networks/tcp-ip-model/. Read: 30.10.2026.
 
 Karvinen, T. 2025a. Wireshark - Getting Started. Readable: https://terokarvinen.com/wireshark-getting-started/. Read: 29.10.2026.
 
