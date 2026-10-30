@@ -2,11 +2,36 @@
 
 Work environment: Kali Linux 2026.2 Virtual Machine
 
+As with all other weekly exercises, I started by running `sudo apt-get update && sudo apt upgrade -y` on my Virtual Machine to make sure everything is up to date.
+
 <br>
 
 ## x) Read and summarize
 
 Task: Read and summarize the two articles: [Wireshark - Getting Started](https://terokarvinen.com/wireshark-getting-started/) and [Network Interface Names on Linux](https://terokarvinen.com/network-interface-linux/) (Reference: Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
+
+**Wireshark - Getting Started**
+
+- Wireshark is the leading network sniffer and analyzer.
+- The user should belong to the *wireshark* group in order to properly capture and view traffic with it.
+- Groups update when re-logging in. *newgrp wireshark* can be used to update the group right away on a specific shell.
+- Wireshark can be run from command line with *wireshark* (or from the Graphical UI).
+- In Wireshark you can select which network interface you want to capture on. "any" is also an option.
+- Captured traffic viewing can be filtered in many ways like by protocol, port, IP address or strings. For example *tcp.port == 443*.
+- Captures can be saved into **.pcap**-files.
+
+(Reference: Karvinen, T. 2025a)
+
+<br>
+
+**Network Interface Names on Linux**
+
+- Network interface is like a network card, but it's not always a physical card.
+- All computers have the loopback interface for localhost, which has no physical card.
+- IPv4 local addresses are 127.0.0.1/8 and IPv6 local addresses are ::1/128.
+- You can check your interfaces with *ip a* (ip address) and *ip route*.
+
+(Reference: Karvinen, T. 2025b)
 
 <br>
 
