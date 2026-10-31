@@ -20,7 +20,7 @@ Task: Read and summarize the two articles: [Wireshark - Getting Started](https:/
 - Captured traffic viewing can be filtered in many ways like by protocol, port, IP address or strings. For example *tcp.port == 443*.
 - Captures can be saved into **.pcap**-files.
 
-Reference: Karvinen, T. 2025a
+Reference: Karvinen 2025a
 
 <br>
 
@@ -31,7 +31,7 @@ Reference: Karvinen, T. 2025a
 - IPv4 local addresses are 127.0.0.1/8 and IPv6 local addresses are ::1/128.
 - You can check your interfaces with *ip a* (ip address) and *ip route*.
 
-Reference: Karvinen, T. 2025b
+Reference: Karvinen 2025b
 
 <br>
 
@@ -71,7 +71,7 @@ With a Virtual Machine it can also be done by going into the Virtual Machine's s
 
 Task: Install Wireshark and use it to capture activity. Only your own activity. Using Virtual Machine is allowed. (Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
 
-Wireshark can be installed with `sudo apt-get update` and `sudo apt-get install wireshark` (Karvinen, T. 2025a).
+Wireshark can be installed with `sudo apt-get update` and `sudo apt-get install wireshark` (Karvinen 2025a).
 
 My Kali Linux came with Wireshark already installed:
 
@@ -83,11 +83,20 @@ My Kali Linux came with Wireshark already installed:
 
 Task: Point out TCP/IP-model's 4 layers from one captured package. In addition to explanation, hightlight them in a screenshot. (Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
 
-
+TCP/IP Model based on the article by Geeksforgeeks (2026):
 
 <img width="350" height="740" alt="TCPIP_model" src="https://github.com/user-attachments/assets/374b19cb-7b6c-4a83-9121-be54f39eb906" />
 
-TCP/IP Model drawn by me based on (Geeksforgeeks 2026).
+I started Wireshark recording on **any** and navigated to www.google.com on a web browser to generate some traffic.
+
+I used the following package as an example for this exercise:
+
+<img width="1027" height="42" alt="kuva" src="https://github.com/user-attachments/assets/304955c8-9b12-4b23-ab57-cd9693ecdbe7" />
+
+<img width="728" height="106" alt="kuva" src="https://github.com/user-attachments/assets/a5ea54d7-2d45-4a1a-9d16-0165ae00e623" />
+
+<img width="1041" height="435" alt="kuva" src="https://github.com/user-attachments/assets/38681fda-b198-4abb-a76c-909158173c8d" />
+
 
 <br>
 
