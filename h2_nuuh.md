@@ -81,7 +81,7 @@ My Kali Linux came with Wireshark already installed:
 
 ## d) Oikeesti TCP/IP
 
-Task: Point out TCP/IP-model's 4 layers from one captured package. In addition to explanation, hightlight them in a screenshot. (Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
+Task: Point out TCP/IP-model's 4 layers from one captured packet. In addition to explanation, hightlight them in a screenshot. (Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
 
 TCP/IP Model based on the article by Geeksforgeeks (2026):
 
@@ -89,7 +89,7 @@ TCP/IP Model based on the article by Geeksforgeeks (2026):
 
 I started a Wireshark recording on **any** network and navigated to www.google.com on a web browser to generate some traffic.
 
-I used the following package as an example for this exercise:
+I used the following packet as an example for this exercise:
 
 <img width="1027" height="42" alt="kuva" src="https://github.com/user-attachments/assets/304955c8-9b12-4b23-ab57-cd9693ecdbe7" />
 
@@ -129,13 +129,13 @@ The whole traffic was captured on 2025-03-28 and lasted about 7.5 seconds.
 
 Task: From **surfing-secure.pap**, try to solve which browser the user is using. (Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
 
-I tried inspecting namely the Client Hello -packages, which can be viewed easier by applying the filter `tls.handshake.type == 1`, for a bit. I didn't however find anything that would lead me to the path of finding out which browser was used here.
+I tried inspecting namely the Client Hello -packets, which can be viewed easier by applying the filter `tls.handshake.type == 1`, for a bit. I didn't however find anything that would lead me to the path of finding out which browser was used here.
 
 Next thing I did was I asked ChatGPT-6 LLM to analyze the file, try to solve the issue and explain to me how the conclusion was reached:
 
 Client Hello is sent by the browser to the server when the HTTPS connection is established. The message contains information about the client's TLS implementation like supported encryption algoritms and extensions.
 
-I used this package for inspection:
+I used this packet for inspection:
 
 <img width="996" height="26" alt="kuva" src="https://github.com/user-attachments/assets/c5e756b3-6a0e-422b-b1a1-88aecca5cc39" />
 
@@ -161,7 +161,7 @@ This leads me to strongly believe the client in the capture was using Mozilla Fi
 
 Task: From **surfing-secure.pap**, try to solve what model NIC (Network Interface Card) the user has. (Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
 
-On the very first package, in the Ethernet II header, I found the client's MAC address **52:54:00:2f:e1:e5**, where the OUI is the first 3 bytes.
+On the very first packet, in the Ethernet II header, I found the client's MAC address **52:54:00:2f:e1:e5**, where the OUI is the first 3 bytes.
 
 <img width="987" height="530" alt="kuva" src="https://github.com/user-attachments/assets/aefa5960-1a49-4af5-a191-0e8541c2e0bc" />
 
@@ -210,6 +210,35 @@ Note: My method only displays what the website displays for its server now, and 
 ## i) Analyysi
 
 Task: Capture a small amount of your own network traffic. Analyze it and explain what happens, in as much detail as possible. (Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
+
+I started a fresh recording on **any** network using Wireshark. I then used a ping to generate some traffic with `ping 8.8.8.8`. After 3 successful replies, I stopped the pinging with `ctrl + C`.
+
+<img width="513" height="157" alt="kuva" src="https://github.com/user-attachments/assets/f7633d69-646b-482f-834f-f45683534525" />
+
+As a result, Wireshark now displays the following traffic:
+
+<img width="1289" height="130" alt="kuva" src="https://github.com/user-attachments/assets/23ccb55f-7439-4a69-8a7f-5b299916906d" />
+
+The client 10.0.2.15 sends 3 nearly identical ping requests (one at a time) to 8.8.8.8, and receives a ping reply back between each one. 
+
+The protocol being used is ICMP in both ways. 
+
+`ttl=64`, Time To Live, means the packet can go through 64 routers without reaching its target before it's lost. This is to prevent the packet getting stuck in forever loop.
+
+Looking at the first request, packet 1, we can also inspect the MAC address of the source which is `08:00:27:0b:6a:5b`. 
+
+Linux cooked capture v1 is alternative to Ethernet II in Network Access / Link Layer.
+
+The ping only uses Link Layer, Internet Layer and Application Layer. Transport Layer is not used here.
+
+Size of all of the packets, both incoming replies and outgoing requests, is 100 bytes.
+
+<img width="762" height="184" alt="kuva" src="https://github.com/user-attachments/assets/86e4489a-fa66-4ee9-bdab-420449f034c7" />
+
+<img width="606" height="267" alt="kuva" src="https://github.com/user-attachments/assets/bf4c295f-f1b4-4552-b3cb-372ea748599d" />
+
+<img width="549" height="283" alt="kuva" src="https://github.com/user-attachments/assets/62d1a8c1-40e6-4593-a98c-f7a21ec280f3" />
+
 
 <br>
 
