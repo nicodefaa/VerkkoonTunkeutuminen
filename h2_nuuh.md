@@ -99,7 +99,7 @@ Based on the used protocols, and according to IBM (2026), I combined the packet 
 
 <img width="1041" height="435" alt="kuva" src="https://github.com/user-attachments/assets/38681fda-b198-4abb-a76c-909158173c8d" />
 
-*Linux cooked capture v1* was working on the Link-layer based on the information inside the header:
+*Linux cooked capture v1* was working on the Link-layer based on the information inside the header. It's normally called *Ethernet II*, but was displayed with a different name for me possibly due to my VPN- or VirtualBox-settings.
 
 <img width="753" height="292" alt="kuva" src="https://github.com/user-attachments/assets/669ea1cd-b3e3-41ce-afdc-478f4caa1df5" />
 
@@ -109,11 +109,27 @@ Based on the used protocols, and according to IBM (2026), I combined the packet 
 
 Task: Open the file **surfing-secure.pcap**. Inspect it and explain what kind of capture it is, in short and in general. (Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
 
+I downloaded the file *surfing-secure.pcap* from course website (Karvinen & Iso-Anttila 2026) and opened it in Wireshark from a new terminal `wireshark ~/Downloads/surfing-secure.pcap`.
+
+The whole capture consisted of 283 lines of traffic. Protocols included DNS, QUIC, TCP, TLSv1.3 and ARP.
+
+The first thing I noticed the user had navigated to www.google.com and terokarvinen.com. Both included DNS queries.
+
+<img width="1336" height="304" alt="kuva" src="https://github.com/user-attachments/assets/03e91978-9b1e-4d83-93cc-8cc71b08e5a3" />
+
+There were also traffic to gc.zgo.at and terokarvinen.goatcounter.com. With a quick googling, GoatCounter seems to be an open source web analytics tool.
+
+Near the end there was also an ARP request for another device on the LAN.
+
+The whole traffic was captured on 2025-03-28 and lasted about 7.5 seconds.
+
 <br>
 
 ## f) Volutary, difficult
 
 Task: From **surfing-secure.pap**, try to solve which browser the user is using. (Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
+
+
 
 <br>
 
