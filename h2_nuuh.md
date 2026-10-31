@@ -171,7 +171,7 @@ Searching online I found Quickemu's documentation page, which stated "QEMU requi
 
 Quick Emulator is used by virtual network interfaces in kernel-based virtual machines.
 
-After some more searching I also found one lookup tool that was able to find the OUI, confirming it belongs to QEMU/KV virtual NIC:
+After some more searching I also found one lookup tool that was able to find the OUI, confirming it belongs to QEMU/KVM virtual NIC:
 
 <img width="1035" height="318" alt="kuva" src="https://github.com/user-attachments/assets/ae7a7c3f-01b2-4172-a6b6-c5e5dbdf61f9" />
 
