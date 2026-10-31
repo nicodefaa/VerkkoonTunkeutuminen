@@ -129,7 +129,31 @@ The whole traffic was captured on 2025-03-28 and lasted about 7.5 seconds.
 
 Task: From **surfing-secure.pap**, try to solve which browser the user is using. (Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
 
+I tried inspecting namely the Client Hello -packages, which can be viewed easier by applying the filter `tls.handshake.type == 1`, for a bit. I didn't however find anything that would lead me to the path of finding out which browser was used here.
 
+Next thing I did was I asked ChatGPT-6 LLM to analyze the file, try to solve the issue and explain to me how the conclusion was reached:
+
+Client Hello is sent by the browser to the server when the HTTPS connection is established. The message contains information about the client's TLS implementation like supported encryption algoritms and extensions.
+
+I used this package for inspection:
+
+<img width="996" height="26" alt="kuva" src="https://github.com/user-attachments/assets/c5e756b3-6a0e-422b-b1a1-88aecca5cc39" />
+
+Under *Transport Layer Security* -> *TLSv1.3 Record Layer: Handshake Protocol: Client Hello* -> *Handshake: Client Hello* -> *Cipher Suites (17 suotes)* I found the following cipher suites:
+
+<img width="672" height="317" alt="kuva" src="https://github.com/user-attachments/assets/6c7a1a4c-3816-4d8d-b273-e84c2b45099e" />
+
+Different browsers and TLS implementations have different preferences for encryption algorithms, and the order can help distinguish them also.
+
+On the very bottom of *Handshake Protocol: Client Hello* I found the following line *[JA3: b5001237acdf006056b409cc433726b0]*:
+
+<img width="738" height="106" alt="kuva" src="https://github.com/user-attachments/assets/f106490b-9763-4039-b50d-8bad2b4afeac" />
+
+Pasting this fingerprint into a [JA3 Database](https://ja3.zone/) (JA3.ZONE), the overwhelming majority of the results were Firefox, with a few Chrome and one Opera.
+
+<img width="1367" height="630" alt="kuva" src="https://github.com/user-attachments/assets/4cdd6048-87f8-498d-a388-13dd050be230" />
+
+This leads me to strongly believe the client in the capture was using Mozilla Firefox browser, but I couldn't find anything that would prove it 100% guaranteed.
 
 <br>
 
@@ -157,7 +181,11 @@ List of references:
 
 Geeksforgeeks 2026. TCP/IP Model. Readable: https://www.geeksforgeeks.org/computer-networks/tcp-ip-model/. Read: 30.10.2026.
 
+ChatGPT-6 LLM .
+
 IBM 2026. TCP/IP Protocols and Functions. Readable: https://www.ibm.com/docs/en/zvm/7.4.0?topic=protocols-tcpip-functions. Read: 31.10.2026.
+
+JA3.ZONE. TLS Fingerprint Database. Readable: https://ja3.zone/. Read: 31.10.2026.
 
 Karvinen, T. 2025a. Wireshark - Getting Started. Readable: https://terokarvinen.com/wireshark-getting-started/. Read: 29.10.2026.
 
