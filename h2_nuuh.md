@@ -161,11 +161,19 @@ This leads me to strongly believe the client in the capture was using Mozilla Fi
 
 Task: From **surfing-secure.pap**, try to solve what model NIC (Network Interface Card) the user has. (Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
 
+On the very first package, in the Ethernet II header, I found the user's MAC address **52:54:00:cc:d7:12**.
+
+<img width="987" height="530" alt="kuva" src="https://github.com/user-attachments/assets/aefa5960-1a49-4af5-a191-0e8541c2e0bc" />
+
+
 <br>
 
 ## h) 
 
 Task: From **surfing-secure.pap**, try to solve what web server the user has visited. Bad news: Connection is secured with TLS-encryption. (Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
+
+
+
 
 <br>
 
