@@ -205,7 +205,6 @@ And for *terokarvinen.goatcounter.com* it was "**Vinyl-Cache**":
 
 Note: My method only displays what the website displays for its server now, and there is no guarantee it was the same at the same the traffic for the surfing-secure.pcap file was captured.
 
-
 <br>
 
 ## i) Analyysi
@@ -220,7 +219,7 @@ List of references:
 
 Geeksforgeeks 2026. TCP/IP Model. Readable: https://www.geeksforgeeks.org/computer-networks/tcp-ip-model/. Read: 30.10.2026.
 
-ChatGPT-6 LLM .
+ChatGPT-6 LLM was used to analyze the file in task f.
 
 IBM 2026. TCP/IP Protocols and Functions. Readable: https://www.ibm.com/docs/en/zvm/7.4.0?topic=protocols-tcpip-functions. Read: 31.10.2026.
 
