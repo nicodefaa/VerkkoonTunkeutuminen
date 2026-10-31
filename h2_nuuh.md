@@ -189,6 +189,23 @@ Even though the connection is encrypted, we can still clearly see which web serv
 
 So the client has visited terokarvinen.com, gc.zgo.at and terokarvinen.goatcounter.com.
 
+The original Finnish task said: "Millä weppipalvelimella käyttäjä on surffaillut?" (Karvinen & Iso-Anttila 2026). Which I originally interpreted as "Which website the client has visited?" but this seemed a little too easy, so I thought maybe it meant actual server the website was hosted under.
+
+I used the command `curl -I terokarvinen.com` to display the headers of that specific web site, and found a line saying "**Server: Apache/2.2.14 (Ubuntu)**".
+
+<img width="319" height="161" alt="kuva" src="https://github.com/user-attachments/assets/1ed22413-2f7c-4e1c-b59b-00ec619bbd93" />
+
+For *gc.zgo.at* it was "**BunnyCDN-FI1-1208**":
+
+<img width="395" height="224" alt="kuva" src="https://github.com/user-attachments/assets/106b1a2d-5d57-44d7-86d7-45af0b8ed086" />
+
+And for *terokarvinen.goatcounter.com* it was "**Vinyl-Cache**":
+
+<img width="404" height="142" alt="kuva" src="https://github.com/user-attachments/assets/db2914d5-14e6-48de-913f-e6a053f61c79" />
+
+Note: My method only displays what the website displays for its server now, and there is no guarantee it was the same at the same the traffic for the surfing-secure.pcap file was captured.
+
+
 <br>
 
 ## i) Analyysi
