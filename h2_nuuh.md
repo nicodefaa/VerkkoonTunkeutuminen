@@ -177,15 +177,17 @@ After some more searching I also found one lookup tool that was able to find the
 
 *52:54:00 lookup on PureUtil (PureUtil 2026)*
 
-
 <br>
 
 ## h) 
 
 Task: From **surfing-secure.pap**, try to solve what web server the user has visited. Bad news: Connection is secured with TLS-encryption. (Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
 
+Even though the connection is encrypted, we can still clearly see which web servers the client has established connections with with Client Hello, by using the filter `tls.handshake.type == 1`.
 
+<img width="1197" height="209" alt="kuva" src="https://github.com/user-attachments/assets/d396e9c9-eb29-4205-a08d-906f3423a855" />
 
+So the client has visited terokarvinen.com, gc.zgo.at and terokarvinen.goatcounter.com.
 
 <br>
 
