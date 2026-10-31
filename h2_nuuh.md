@@ -87,7 +87,7 @@ TCP/IP Model based on the article by Geeksforgeeks (2026):
 
 <img width="350" height="740" alt="TCPIP_model" src="https://github.com/user-attachments/assets/374b19cb-7b6c-4a83-9121-be54f39eb906" />
 
-I started Wireshark recording on **any** and navigated to www.google.com on a web browser to generate some traffic.
+I started a Wireshark recording on **any** network and navigated to www.google.com on a web browser to generate some traffic.
 
 I used the following package as an example for this exercise:
 
@@ -95,8 +95,13 @@ I used the following package as an example for this exercise:
 
 <img width="728" height="106" alt="kuva" src="https://github.com/user-attachments/assets/a5ea54d7-2d45-4a1a-9d16-0165ae00e623" />
 
+Based on the used protocols, and according to IBM (2026), I combined the packet information sections from Wireshark into TCP/IP Model:
+
 <img width="1041" height="435" alt="kuva" src="https://github.com/user-attachments/assets/38681fda-b198-4abb-a76c-909158173c8d" />
 
+*Linux cooked capture v1* was working on the Link-layer based on the information inside the header:
+
+<img width="753" height="292" alt="kuva" src="https://github.com/user-attachments/assets/669ea1cd-b3e3-41ce-afdc-478f4caa1df5" />
 
 <br>
 
@@ -135,6 +140,8 @@ Task: Capture a small amount of your own network traffic. Analyze it and explain
 List of references:
 
 Geeksforgeeks 2026. TCP/IP Model. Readable: https://www.geeksforgeeks.org/computer-networks/tcp-ip-model/. Read: 30.10.2026.
+
+IBM 2026. TCP/IP Protocols and Functions. Readable: https://www.ibm.com/docs/en/zvm/7.4.0?topic=protocols-tcpip-functions. Read: 31.10.2026.
 
 Karvinen, T. 2025a. Wireshark - Getting Started. Readable: https://terokarvinen.com/wireshark-getting-started/. Read: 29.10.2026.
 
