@@ -161,9 +161,21 @@ This leads me to strongly believe the client in the capture was using Mozilla Fi
 
 Task: From **surfing-secure.pap**, try to solve what model NIC (Network Interface Card) the user has. (Karvinen & Iso-Anttila 2026) *Translated from Finnish by me.*
 
-On the very first package, in the Ethernet II header, I found the user's MAC address **52:54:00:cc:d7:12**.
+On the very first package, in the Ethernet II header, I found the client's MAC address **52:54:00:2f:e1:e5**, where the OUI is the first 3 bytes.
 
 <img width="987" height="530" alt="kuva" src="https://github.com/user-attachments/assets/aefa5960-1a49-4af5-a191-0e8541c2e0bc" />
+
+Most OUI lookups tools I tried to use couldn't find anything by the OUI 52:54:00.
+
+Searching online I found Quickemu's documentation page, which stated "QEMU requires that the MAC address is in the range: 52:54:00:AB:00:00 - 52:54:00:AB:FF:F" (Quickemu-project 2026).
+
+Quick Emulator is used by virtual network interfaces in kernel-based virtual machines.
+
+After some more searching I also found one lookup tool that was able to find the OUI, confirming it belongs to QEMU/KV virtual NIC:
+
+<img width="1035" height="318" alt="kuva" src="https://github.com/user-attachments/assets/ae7a7c3f-01b2-4172-a6b6-c5e5dbdf61f9" />
+
+*52:54:00 lookup on PureUtil (PureUtil 2026)*
 
 
 <br>
@@ -200,3 +212,7 @@ Karvinen, T. 2025a. Wireshark - Getting Started. Readable: https://terokarvinen.
 Karvinen, T. 2025b. Network Interface Names on Linux. Readable: https://terokarvinen.com/network-interface-linux/. Read: 29.10.2026.
 
 Karvinen, T. & Iso-Anttila, L. 2026. Verkkoon tunkeutuminen ja tiedustelu - Network Attacks and Reconnaissance. Readable: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/. Read: 29.10.2026.
+
+PureUtil 2026. MAC Address Lookup. Readable: https://www.pureutil.org/tools/mac-address-lookup. Read: 31.10.2026.
+
+Quickemu-project 2026. quickemu_conf.5.md. Readable: https://github.com/quickemu-project/quickemu/blob/master/docs/quickemu_conf.5.md. Read: 31.10.2026.
