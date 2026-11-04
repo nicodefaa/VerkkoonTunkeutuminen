@@ -4,7 +4,7 @@
 
 <br>
 
-**a) missing in the tasks*
+**a) missing in the assignments*
 
 ## b) rtl_433
 
@@ -19,6 +19,14 @@
 <br>
 
 ## e) Ultimate
+
+<br>
+
+## f) Yleiskuva
+
+<br>
+
+## g) Bittistä
 
 <br>
 
