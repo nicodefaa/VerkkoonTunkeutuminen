@@ -55,11 +55,13 @@ I downloaded the file **Converted_433.92M_2000k.cs8** from the course page (Karv
 
 <img width="830" height="253" alt="kuva" src="https://github.com/user-attachments/assets/a2e00ebc-bf17-4e4c-886e-80feef9f7799" />
 
-The result was a list of 12 recordings:
+The result was a list of 12 signal results:
 
 <img width="885" height="697" alt="kuva" src="https://github.com/user-attachments/assets/97455cb3-0e7d-42b7-90ff-f40fc9a6c48c" />
 
-Each one of them has the same id **8785315**
+Each one of them had the same id / House Code **8785315**. All the *Proove-Security* and *Nexa-Security* ones had the channel 3. The *KlikAanKlikUit-Switch* seems to be some sort of remote that sends a signal multiple times, possibly due to possible errors in some of them.
+
+The whole recording happens within 0.4 seconds.
 
 
 <br>
