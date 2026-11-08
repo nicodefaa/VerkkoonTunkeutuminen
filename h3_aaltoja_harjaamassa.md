@@ -115,11 +115,20 @@ With the command `urh`, the graphical interface of the program opened:
 
 Task: Inspect the sample file. It has a recording of Nexa's power outlet remote light 1 ON -button pressed thrice. Use URH. Describe it in general, how long, what frequency, when it was recorded, how does it look in general? (Karvinen & Iso-Anttila 2026). *Translated from Finnish by me.*
 
+I downloaded the file *1-on-on-on-HackRF-20250412_113805-433_912MHz-2MSps-2MHz.complex16s* from the course page, used the command `urh` to start URH, then opened the file from the menu *File* > *Open...*.
+
+<img width="1125" height="527" alt="kuva" src="https://github.com/user-attachments/assets/f9ce5182-4523-4cbf-873f-17c39828fdbb" />
+
+After opening the file, the basic view looked like this:
+
+<img width="1890" height="558" alt="kuva" src="https://github.com/user-attachments/assets/fec7a7fc-028f-4340-baa2-a2b56b475184" />
+
+
 <br>
 
 ## g) Bittistä
 
-Task: Same file as in f. Demodulate the signal to get raw bits. What is the correct modulation? How long is one raw bit in real time? Describe by comparing it to something. (Karvinen & Iso-Anttila 2026). *Translated from Finnish by me.*
+Task: Demodulate the signal to get raw bits. What is the correct modulation? How long is one raw bit in real time? Describe by comparing it to something. Same file as in f. (Karvinen & Iso-Anttila 2026). *Translated from Finnish by me.*
 
 <br>
 
