@@ -113,19 +113,16 @@ With the command `urh`, the graphical interface of the program opened:
 
 ## f) Yleiskuva
 
+Task: Inspect the sample file. It has a recording of Nexa's power outlet remote light 1 ON -button pressed thrice. Use URH. Describe it in general, how long, what frequency, when it was recorded, how does it look in general? (Karvinen & Iso-Anttila 2026). *Translated from Finnish by me.*
+
 <br>
 
 ## g) Bittistä
 
-<br>
-
-## h) Sdr++ *(voluntary)*
+Task: Same file as in f. Demodulate the signal to get raw bits. What is the correct modulation? How long is one raw bit in real time? Describe by comparing it to something. (Karvinen & Iso-Anttila 2026). *Translated from Finnish by me.*
 
 <br>
 
-## i) GNU Radio *(voluntary)*
-
-<br>
 
 List of references:
 
