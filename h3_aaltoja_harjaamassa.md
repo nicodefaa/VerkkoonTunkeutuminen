@@ -149,12 +149,22 @@ Overall there were 5 big clusters of waves, which seemed interesting since the t
 
 Task: Demodulate the signal to get raw bits. What is the correct modulation? How long is one raw bit in real time? Describe by comparing it to something. Same file as in f. (Karvinen & Iso-Anttila 2026). *Translated from Finnish by me.*
 
+Correct modulation: ASK (Amplitude Shift Keying)
+
+Bit length in real time: 522 μs (microseconds) / 0,000522 seconds
+
+<img width="447" height="456" alt="kuva" src="https://github.com/user-attachments/assets/2775ecc9-57b6-411f-9ed1-880f8c5626a7" />
+
+The bit length was so fast that it was hard to think of anything to compare it to, so I asked ChatGPT-6.0 LLM to provide this one comparison:
+
+*A typical human blink takes around 100-400 milliseconds, so one raw bit is roughly 190-760 times shorter than a blink.*
+
 <br>
 
 
 List of references:
 
-ChatGPT-6.0 LLM used in task d.
+ChatGPT-6.0 LLM used in task d, and at the end of task g.
 
 Cornelius 2022. Decode 433.92 MHz weather station data. Readable: https://www.onetransistor.eu/2022/01/decode-433mhz-ask-signal.html. Read: 4.11.2026.
 
