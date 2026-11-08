@@ -123,6 +123,25 @@ After opening the file, the basic view looked like this:
 
 <img width="1890" height="558" alt="kuva" src="https://github.com/user-attachments/assets/fec7a7fc-028f-4340-baa2-a2b56b475184" />
 
+Zooming further in you could see the waves clearer:
+
+<img width="1057" height="356" alt="kuva" src="https://github.com/user-attachments/assets/468d90ea-584a-4416-9ec5-41e3f6a53a46" />
+
+I noticed that the parts with waves are 1's and the flat line parts are 0's in the bit string:
+
+<img width="936" height="383" alt="kuva" src="https://github.com/user-attachments/assets/b3838f9e-f28f-4f0c-b03b-7723c8aba9f8" />
+
+Selecting everything with **ctrl + A** displayed 5.49 seconds for the length of the full sample:
+
+<img width="1631" height="506" alt="kuva" src="https://github.com/user-attachments/assets/eb250eee-fe85-47f2-aa52-316c8e6bbc74" />
+
+The filename gives us a hint that it was recorded on 12.4.2025 (12th of April):
+
+<img width="262" height="87" alt="kuva" src="https://github.com/user-attachments/assets/da129532-ebcc-40ad-81e1-a4fef449c1f8" />
+
+Overall there were 5 big clusters of waves, which seemed interesting since the task said the button was pressed 3 times:
+
+<img width="1365" height="208" alt="kuva" src="https://github.com/user-attachments/assets/1453cc7e-3aac-477d-ad95-daebcbbcf2d7" />
 
 <br>
 
