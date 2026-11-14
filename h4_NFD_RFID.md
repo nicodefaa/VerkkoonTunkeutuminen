@@ -8,19 +8,23 @@ As with all other weekly exercises, I started by running `sudo apt-get update &&
 
 <br>
 
-## x) 
-
-<br>
-
 ## a) 
+
+Task: Take a look at the RFID products you use, and think how well are you protected against snooping? (Karvinen & Iso-Anttila 2026)
+
+
 
 <br>
 
 ## b) 
 
+Task: Familiarize yourself with the structure of APDU commands. Use of AI is permitted for this. (Karvinen & Iso-Anttila 2026)
+
 <br>
 
 ## c) 
+
+Task: Research and share an interesting news article regarding RFID hacking. (Karvinen & Iso-Anttila 2026)
 
 <br>
 
