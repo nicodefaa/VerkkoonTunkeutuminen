@@ -1,4 +1,4 @@
-# Placeholder template
+# h4 NFC & RFID
 
 <br>
 
@@ -21,34 +21,6 @@ As with all other weekly exercises, I started by running `sudo apt-get update &&
 <br>
 
 ## c) 
-
-<br>
-
-## d) 
-
-<br>
-
-## e) 
-
-<br>
-
-## f) 
-
-<br>
-
-## g) 
-
-<br>
-
-## h) 
-
-<br>
-
-## i) 
-
-<br>
-
-## j)
 
 <br>
 
