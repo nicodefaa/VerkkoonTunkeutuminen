@@ -10,11 +10,11 @@ As with all other weekly exercises, I started by running `sudo apt-get update &&
 
 ## a) Task: Take a look at the RFID products you use, and think how well are you protected against snooping? (Karvinen & Iso-Anttila 2026)
 
-First things that came to mind thinking about this question were the physical precautions I have taken, like using an RFID-blocking wallet and always keeping my phone's NFC-feature toggled off when not in use.
+First things that came to mind thinking about this question were the physical precautions I have taken, like using an RFID-blocking wallet and always keeping my phone's NFC-feature toggled off when not specifically in use.
 
 I used the app **NFC TagInfo by NXP** on my android phone, which I downloaded from the Google Play store, to scan some of the cards in my use.
 
-First card I tested was my customer loyalty card for a grocery store, and looked around a bit for some interesting information.
+One card I tested was my customer loyalty card for a grocery store, and looked around a bit for some interesting information.
 
 The physical range limit to read the card's chip was about 5 cm.
 
@@ -28,11 +28,13 @@ There was some information about the Android Technology and Protocol Information
 
 In the **Memory Content** field it displayed a text *No application information available*.
 
-There didn't seem to be any sensitive information readable in plain text there.
+There didn't seem to be any sensitive information readable in plain text there. Still, I wasn't sure which pieces of information would've been safe to share, so I didn't attach any screenshots from the app here.
 
 <br>
 
 ## b) Task: Familiarize yourself with the structure of APDU commands. Use of AI is permitted for this. (Karvinen & Iso-Anttila 2026)
+
+APDU stands for Application Protocol Data Units. In a smart card conversation sequence the host sends a command APDU, and the card answers with a response APDU. The two status bytes at the end of each response tell you what happened (Albimat 2023).
 
 <br>
 
@@ -42,4 +44,6 @@ There didn't seem to be any sensitive information readable in plain text there.
 
 List of references:
 
-Karvinen, T. & Iso-Anttila, L. 2026. Verkkoon tunkeutuminen ja tiedustelu - Network Attacks and Reconnaissance. Readable: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/. Read: 2026.
+Albimat 2023. Smart Card APDU Commands: A Practical Developer Reference. Readable: https://ambimat.com/smart-card-selected-apdu-commands/. Read: 15.11.2026.
+
+Karvinen, T. & Iso-Anttila, L. 2026. Verkkoon tunkeutuminen ja tiedustelu - Network Attacks and Reconnaissance. Readable: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/. Read: 14.11.2026.
