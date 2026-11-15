@@ -34,7 +34,24 @@ There didn't seem to be any sensitive information readable in plain text there. 
 
 ## b) Task: Familiarize yourself with the structure of APDU commands. Use of AI is permitted for this. (Karvinen & Iso-Anttila 2026)
 
-APDU stands for Application Protocol Data Units. In a smart card conversation sequence the host sends a command APDU, and the card answers with a response APDU. The two status bytes at the end of each response tell you what happened (Albimat 2023).
+APDU stands for Application Protocol Data Units. In a smart card conversation sequence the host sends a command APDU, and the card answers with a response APDU. The two status bytes at the end of each response tell you what happened (Ambimat 2023).
+
+The standard structure consists of a mandatory four-byte header and an optional body. The header's four fields are:
+
+**CLA**, Class, Size: 1 byte, Identifying and securing the command chaining indicators.
+
+**INS**, Instructions, Size: 1 byte, Tells which command it is (for example A4 = SELECT).
+
+**P1**, Parameter 1, Size: 1 byte, Meaning depends on the instruction.
+
+**P2**, Parameter 2, Size: 1 byte, Meaning depends on the instruction.
+
+(Ambimat 2023)
+
+I also used ChatGPT-6.0 LLM to give me an example of this structure, and draw a table based on the explanation it gave me:
+
+<img width="1293" height="161" alt="kuva" src="https://github.com/user-attachments/assets/14978b4d-9b44-40ca-95b9-8d122a27ebe5" />
+
 
 <br>
 
@@ -44,6 +61,8 @@ APDU stands for Application Protocol Data Units. In a smart card conversation se
 
 List of references:
 
-Albimat 2023. Smart Card APDU Commands: A Practical Developer Reference. Readable: https://ambimat.com/smart-card-selected-apdu-commands/. Read: 15.11.2026.
+Ambimat 2023. Smart Card APDU Commands: A Practical Developer Reference. Readable: https://ambimat.com/smart-card-selected-apdu-commands/. Read: 15.11.2026.
+
+ChatGPT-6.0 LLM used to give an example of APDU structure in task b.
 
 Karvinen, T. & Iso-Anttila, L. 2026. Verkkoon tunkeutuminen ja tiedustelu - Network Attacks and Reconnaissance. Readable: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/. Read: 14.11.2026.
