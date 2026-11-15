@@ -60,6 +60,8 @@ I also used ChatGPT-6.0 LLM to give me an example of this structure, and draw a 
 
 <img width="1293" height="161" alt="kuva" src="https://github.com/user-attachments/assets/14978b4d-9b44-40ca-95b9-8d122a27ebe5" />
 
+The **Lc**-field (07) tells the command will include 7 bytes of data, the 7 following bytes.
+
 
 <br>
 
