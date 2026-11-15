@@ -67,6 +67,35 @@ The **Lc**-field (07) tells the command will include 7 bytes of data, the 7 foll
 
 ## c) Task: Research and share an interesting news article regarding RFID hacking. (Karvinen & Iso-Anttila 2026)
 
+I found an article about the NFC Card fraud method called WindRelay. The article described a fraud in which criminals can use victims' bank cards remotely through the NFC technology.
+
+The attack works as follows:
+
+1. A criminal calls the victim pretending to be an employee of the bank and claims there is a problem with the victim's card.
+
+2. They are tricked into installing a malicious app on their phone from a third-party website.
+
+3. The victim places their card against their phone and the malware app reads the card's NFC data.
+
+4. The communication data is relayed in real time to the criminal's phone, which can act as the original bank card at a payment terminal.
+
+5. The victim is also tricked to give their PIN code, allowing the criminal to make payments using the victim's card.
+
+The card itself is not copied, but its data is temporarily sent in real time through NFC.
+
+The article gives a few tips to avoid being frauded by this:
+
+- Never give out your PIN-code to anyone who asks for it. Your bank will never ask for it.
+
+- Never download unknown apps that somebody asks you to install.
+
+- Keep NFC on your phone off when you don't need it. Check settings for app permissions about NFC.
+
+- At worst case call your bank and disable your card.
+
+(Huijausvahti 2026)
+
+
 <br>
 
 List of references:
@@ -74,5 +103,7 @@ List of references:
 Ambimat 2023. Smart Card APDU Commands: A Practical Developer Reference. Readable: https://ambimat.com/smart-card-selected-apdu-commands/. Read: 15.11.2026.
 
 ChatGPT-6.0 LLM used to give an example of APDU structure in task b.
+
+Huijausvahti 2026. Haittaohjelma käyttää pankkikorttiasi reaaliajassa – kortti on koko ajan omassa kädessäsi. Readable: https://huijausvahti.com/2026-08-14-02-windrelay-nfc-korttihuijaus/. Read: 15.11.2026.
 
 Karvinen, T. & Iso-Anttila, L. 2026. Verkkoon tunkeutuminen ja tiedustelu - Network Attacks and Reconnaissance. Readable: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/. Read: 14.11.2026.
