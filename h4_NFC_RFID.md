@@ -46,6 +46,14 @@ The standard structure consists of a mandatory four-byte header and an optional 
 
 **P2**, Parameter 2, Size: 1 byte, Meaning depends on the instruction.
 
+And the body:
+
+**Lc**, Length of the command data.
+
+**Data**, The command data (for example AID or PIN to write).
+
+**Le**, Maximum number of response data bytes expected.
+
 (Ambimat 2023)
 
 I also used ChatGPT-6.0 LLM to give me an example of this structure, and draw a table based on the explanation it gave me:
