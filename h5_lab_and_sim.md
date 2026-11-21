@@ -46,7 +46,21 @@ I used the default credentials **mininet mininet** to log in.
 
 <img width="746" height="244" alt="kuva" src="https://github.com/user-attachments/assets/79782eaf-e1e9-4fc1-b51e-bd126a58b566" />
 
+Now it was time to try out the ARP attack. I found the guide to this starting from page 17 in 03-mininet.pdf (Haaga-Helia n.d.).
 
+The VM layout was set to US as a default, which made it harder to input the required commands. I asked Copilot how I could change it, and it gave me the command to use `sudo dpkg-reconfigure keyboard-configuration` after this I could select the new language layout:
+
+<img width="583" height="298" alt="kuva" src="https://github.com/user-attachments/assets/f7dfe843-8ad7-425a-878b-ceb9e8daea0b" />
+
+Rest of the options I went with defaults. Afterwards I used `sudo service keyboard-setup restart` to make the change come into effect.
+
+As instructed in the guide (Haaga-Helia n.d.), I used the first command `ryu-manager ryu.app.simple_switch_13`:
+
+<img width="524" height="126" alt="kuva" src="https://github.com/user-attachments/assets/5298b19e-9851-41b2-a965-33de4bfe9d7d" />
+
+That command occupied the terminal which didn't let me input any other commands. I asked Copilot again for help, and it told me to open a new terminal with **alt+F2**, and switch between with **alt+F1** and **alt+F2**. I logged into the new terminal and used the second command `sudo mn --topo single,3 --mac --switch ovsk --controller remote` instructed in the guide:
+
+<img width="703" height="302" alt="kuva" src="https://github.com/user-attachments/assets/770d7848-54f7-4b05-a5a9-954655826e01" />
 
 
 <br>
@@ -60,6 +74,8 @@ I used the default credentials **mininet mininet** to log in.
 <br>
 
 List of references:
+
+Haaga-Helia n.d. Network Protocols and Vulnerabilities. Readable: https://hhmoodle.haaga-helia.fi/pluginfile.php/5055842/mod_resource/content/1/03-mininet.pdf. Read: 21.11.2026.
 
 Karvinen, T. & Iso-Anttila, L. 2026a. Verkkoon tunkeutuminen ja tiedustelu - ICI013AS3A-3004 Tero ja Lari - ti 11:00 pa5001 - 2026p2 +vt4. Readable: https://hhmoodle.haaga-helia.fi/course/view.php?id=49869. Read: 21.11.2026.
 
