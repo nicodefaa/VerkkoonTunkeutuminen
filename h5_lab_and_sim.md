@@ -74,11 +74,36 @@ The guide told me to run `./get_xauth.sh` if there were issues with xterm, but t
 
 <img width="296" height="93" alt="kuva" src="https://github.com/user-attachments/assets/b2dcfe1f-0feb-4ef8-871a-e6eff951aa1f" />
 
-I asked about this error from Copilot that explained me that this command tried to open a graphical terminal window, while my VM was running a text-only console. It told me that they corresponding commands to use in TTY console would be `h1 ping h2`, `h1 ifconfig`, `h1 arp -n` and `h1  python3`, which I tested:
+I asked about this error from Copilot that explained me that this command tried to open a graphical terminal window, while my VM was running a text-only console. It told me that they corresponding commands to use in TTY console would be `h1 ping h2`, `h1 ifconfig` and `h1 arp -n`, which I tested:
 
 <img width="549" height="352" alt="kuva" src="https://github.com/user-attachments/assets/3847fcd4-bbc4-498b-aa04-e0ba0ffb3970" />
 
+<img width="579" height="274" alt="kuva" src="https://github.com/user-attachments/assets/f7a79437-5c32-4845-a333-ef7175cd4b62" />
 
+<img width="678" height="77" alt="kuva" src="https://github.com/user-attachments/assets/5417137a-9609-4e3e-8503-6d1147e68ff8" />
+
+Then the next commands instructed in the guide, used with the `h3` prefix since xterm didn't work for me, `sysctl -w net.ipv4.ip_forward=1`, `iptables -t nat -A PREROUTING -p tcp --dport 22 -j REDIRECT --to-
+port 22` and `tcpdump -i h3-eth0 -w arp-p.pcap &`:
+
+<img width="364" height="39" alt="kuva" src="https://github.com/user-attachments/assets/a8cf7eb1-16c9-4e93-bcc6-eba0737ed71a" />
+
+<img width="691" height="41" alt="kuva" src="https://github.com/user-attachments/assets/0da6e68b-2266-4e4a-a738-391b3bd0d612" />
+
+<img width="385" height="74" alt="kuva" src="https://github.com/user-attachments/assets/b3e09880-3729-436e-bb0d-758312311a95" />
+
+`h3 wireshark &`:
+
+<img width="695" height="39" alt="kuva" src="https://github.com/user-attachments/assets/ff15f011-37f6-41c9-b7c2-8cb1dd2fa530" />
+
+`sshesame -port 22 -listen_address 0.0.0.0`:
+
+<img width="820" height="88" alt="kuva" src="https://github.com/user-attachments/assets/e1746fb4-bfa1-489e-8e5c-b6ec905bfa9e" />
+
+`python3 ./arp_poison.py` ran into another issue:
+
+<img width="748" height="212" alt="kuva" src="https://github.com/user-attachments/assets/132518ee-b41e-47ad-9f4a-2f2825be4cbc" />
+
+At this point I had spent several hours troubleshooting various issues and was running low on time, so I had to concede that this task was too hard for me with the given instructions. I had either done something wrong during the installation process or the instructions weren't matching the virtual machine that was provided.
 
 <br>
 
@@ -92,7 +117,7 @@ I asked about this error from Copilot that explained me that this command tried 
 
 List of references:
 
-Copilot used to assist with errors that came from instructed commands.
+Copilot LLM used to assist with mininet errors and commands.
 
 Haaga-Helia n.d. Network Protocols and Vulnerabilities. Readable: https://hhmoodle.haaga-helia.fi/pluginfile.php/5055842/mod_resource/content/1/03-mininet.pdf. Read: 21.11.2026.
 
