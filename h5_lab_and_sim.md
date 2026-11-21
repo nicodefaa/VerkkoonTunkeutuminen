@@ -62,6 +62,19 @@ That command occupied the terminal which didn't let me input any other commands.
 
 <img width="703" height="302" alt="kuva" src="https://github.com/user-attachments/assets/770d7848-54f7-4b05-a5a9-954655826e01" />
 
+Next, the `pingall` command:
+
+<img width="323" height="120" alt="kuva" src="https://github.com/user-attachments/assets/81d517e7-45ce-4fea-b0f9-293f910e15f6" />
+
+The next instructed command `xterm h1` did not work however:
+
+<img width="320" height="97" alt="kuva" src="https://github.com/user-attachments/assets/2f34a01e-a563-45ca-89a9-f14cb6d15693" />
+
+The guide told me to run `./get_xauth.sh` if there were issues with xterm, but this was not a recognized command either:
+
+<img width="296" height="93" alt="kuva" src="https://github.com/user-attachments/assets/b2dcfe1f-0feb-4ef8-871a-e6eff951aa1f" />
+
+
 
 <br>
 
