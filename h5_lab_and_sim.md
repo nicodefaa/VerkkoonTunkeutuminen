@@ -74,6 +74,10 @@ The guide told me to run `./get_xauth.sh` if there were issues with xterm, but t
 
 <img width="296" height="93" alt="kuva" src="https://github.com/user-attachments/assets/b2dcfe1f-0feb-4ef8-871a-e6eff951aa1f" />
 
+I asked about this error from Copilot that explained me that this command tried to open a graphical terminal window, while my VM was running a text-only console. It told me that they corresponding commands to use in TTY console would be `h1 ping h2`, `h1 ifconfig`, `h1 arp -n` and `h1  python3`, which I tested:
+
+<img width="549" height="352" alt="kuva" src="https://github.com/user-attachments/assets/3847fcd4-bbc4-498b-aa04-e0ba0ffb3970" />
+
 
 
 <br>
@@ -87,6 +91,8 @@ The guide told me to run `./get_xauth.sh` if there were issues with xterm, but t
 <br>
 
 List of references:
+
+Copilot used to assist with errors that came from instructed commands.
 
 Haaga-Helia n.d. Network Protocols and Vulnerabilities. Readable: https://hhmoodle.haaga-helia.fi/pluginfile.php/5055842/mod_resource/content/1/03-mininet.pdf. Read: 21.11.2026.
 
