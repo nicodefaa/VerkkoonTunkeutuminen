@@ -36,7 +36,15 @@ I also tried to re-download the files from OneDrive (which was also very slow fo
 
 After a bit of troubleshooting, I noticed the files in the folder were all less than 1 mb in size, which meant something had probably gone wrong in the download or extraction.
 
-I downloaded the files from OneDrive one more time and started from the beginning, but it didn't help.
+I tried unzipping the **mininet-2.3.0-210211-ubuntu-20.04.1-legacy-server-amd64-Student-lab.tar.xz** found inside the directory. While unzipping it asked if I wanted to replace some files, which I answered no to for all. 
+
+Now I was able to boot up the virtual machine:
+
+<img width="555" height="143" alt="kuva" src="https://github.com/user-attachments/assets/3590fa44-69c3-414b-89aa-373f33c7491b" />
+
+I used the default credentials **mininet mininet** to log in.
+
+<img width="746" height="244" alt="kuva" src="https://github.com/user-attachments/assets/79782eaf-e1e9-4fc1-b51e-bd126a58b566" />
 
 
 
