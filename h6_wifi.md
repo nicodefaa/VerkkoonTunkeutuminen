@@ -34,11 +34,14 @@ I looked through the manuals with `man iw | less` and `man airodump-ng | less` f
 
 The walkthrough (r4ulcl 2023) suggested that we needed to first put the card in monitor mode with `airmon-ng`, then scan the channels using `airodump-ng` to find the wifi-global network.¨
 
-Following the walkthrough, I used the command `sudo airmon-ng start wlan0` to put wlan0 in monitor mode:
+Following the walkthrough, I first created a new directory `mkdir ~/wifi` as suggested, then used the command `sudo airmon-ng start wlan0` to put wlan0 in monitor mode:
 
 <img width="828" height="517" alt="kuva" src="https://github.com/user-attachments/assets/64dfaede-ba5b-4ff3-8055-bec172f478c2" />
 
-`sudo airodump-ng wlan0mon -w ~/wifi/scan --manufacturer --wps --band abg`
+`sudo airodump-ng wlan0mon -w ~/wifi/scan --manufacturer --wps --band abg` to scan the channels:
+
+<img width="1151" height="669" alt="kuva" src="https://github.com/user-attachments/assets/84442879-90d3-424c-8ddc-cd60e8ee364d" />
+
 
 
 <br>
