@@ -40,8 +40,9 @@ Following the walkthrough, I first created a new directory `mkdir ~/wifi` as sug
 
 `sudo airodump-ng wlan0mon -w ~/wifi/scan --manufacturer --wps --band abg` to scan the channels:
 
-<img width="1151" height="669" alt="kuva" src="https://github.com/user-attachments/assets/84442879-90d3-424c-8ddc-cd60e8ee364d" />
+<img width="1151" height="669" alt="kuva" src="https://github.com/user-attachments/assets/16a8bfee-df25-423b-9a28-71811e395336" />
 
+44 was the correct answer.
 
 
 <br>
