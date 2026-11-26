@@ -2,17 +2,18 @@
 
 <br>
 
-Work environment: Kali Linux 2026.2 Virtual Machine
-
-As with all other weekly exercises, I started by running `sudo apt-get update && sudo apt upgrade -y` on my Virtual Machine to make sure everything is up to date.
-
-<br>
-
 ## a) Task: Familiarize yourself with the wifi challenge lab 2.1 exercise environment, and if necessary make use of the existing instructions (Karvinen & Iso-Anttila 2026)
 
 <br>
 
 ## b) Task: Write a report about what you learned and which things surprised you as you did the exercises (Karvinen & Iso-Anttila 2026)
+
+I started by going to the course website (Karvinen & Iso-Anttila 2026) and downloading the **WiFiChallenge Lab v2.5.1.ova** file from the drive link, then imported the appliance into my Oracle VirtualBox Manager.
+
+When starting the Virtual Machine, I got an error saying the network adapter doesn't not exist. I clicked on change it and switched the adapter from NAT to Bridged Adapter, which fixed the issue.
+
+<img width="383" height="253" alt="kuva" src="https://github.com/user-attachments/assets/059ddfb8-8d0a-4e16-9569-0a52932ae835" />
+
 
 <br>
 
